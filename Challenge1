@@ -1,0 +1,12 @@
+SELECT 
+    E.country AS Pais,
+    COUNT(E.id) AS Cantidad_de_empleados,
+    COUNT(DISTINCT J.job_id) AS Cantidad_de_puestos,
+    STRING_AGG(DISTINCT E.gender, ", ") AS Genero,
+    STRING_AGG(DISTINCT E.marital_status, ", ") AS Estado_marital,
+    AVG(J.company_rating) AS Calificacion_empresa_promedio
+FROM `mh-latam-sandbox.Training_BQ.Employees` AS E
+LEFT JOIN `mh-latam-sandbox.Training_BQ.Jobs` AS J 
+    ON E.job_title = J.job_title
+WHERE E.country IS NOT NULL
+GROUP BY country
