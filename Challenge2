@@ -1,0 +1,14 @@
+SELECT 
+    e.job_title AS Puesto_de_trabajo,
+    j.company_name AS Nombre_de_compania,
+    SUM(e.salary) AS Salario_agregado,
+    COUNT(e.id) AS Cantidad_de_empleados,
+    STRING_AGG(CONCAT(e.first_name, ' ', e.last_name), ', ') AS Nombres_de_los_empleados
+FROM `mh-latam-sandbox.Training_BQ.Employees` AS e
+INNER JOIN `mh-latam-sandbox.Training_BQ.Jobs` AS j 
+    ON e.job_title = j.job_title
+WHERE e.job_title LIKE '% II' 
+   OR e.job_title LIKE '% II %'
+GROUP BY 1, 2
+ORDER BY Salario_agregado DESC
+LIMIT 1
