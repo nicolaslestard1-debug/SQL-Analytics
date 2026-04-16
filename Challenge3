@@ -1,0 +1,23 @@
+SELECT
+    j.company_name AS Nombre_de_Division,
+    SUM(e.salary) AS Salario_Total,
+    AVG(e.salary) AS Salario_Promedio,
+    MIN(e.salary) AS Salario_Minimo,
+    MAX(e.salary) AS Salario_Maximo,
+    COUNT(e.id) AS Cantidad_de_empleados,
+    CASE
+        WHEN COUNT(e.id) <= 10 THEN 'Pequeña'
+        WHEN COUNT(e.id) > 10 AND COUNT(e.id) <= 20 THEN 'Mediana'
+        ELSE 'Grande'
+    END AS Division_Size
+FROM
+    `mh-latam-sandbox.Training_BQ.Employees` AS e
+INNER JOIN
+    `mh-latam-sandbox.Training_BQ.Jobs` AS j
+USING(job_title)
+WHERE
+    e.salary BETWEEN 50000 AND 200000
+GROUP BY
+    1
+ORDER BY
+    Salario_Total DESC
