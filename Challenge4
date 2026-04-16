@@ -1,0 +1,19 @@
+SELECT
+    e.department_id,
+    COUNT(e.id) AS cantidad_empleados,
+    AVG(DATE_DIFF(CURRENT_DATE(), e.birth_date, YEAR)) AS promedio_de_edad,
+    COUNTIF(e.gender = 'Male') AS cantidad_hombres,
+    COUNTIF(e.gender = 'Female') AS cantidad_mujeres,
+    COUNTIF(e.gender = 'Agender') AS cantidad_agenero,
+    COUNTIF(e.gender = 'Non-Binary') AS cantidad_no_binario,
+    COUNTIF(e.gender NOT IN ('Male', 'Female', 'Agender', 'Non-Binary')) AS cantidad_otro_genero,
+    COUNTIF(e.hire_date > DATE(j.removed_date)) AS contratados_post_remocion
+FROM
+    `mh-latam-sandbox.Training_BQ.Employees` AS e
+LEFT JOIN
+    `mh-latam-sandbox.Training_BQ.Jobs` AS j
+    ON e.job_title = j.job_title
+GROUP BY
+    1
+ORDER BY
+    cantidad_empleados DESC
