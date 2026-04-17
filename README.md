@@ -32,4 +32,23 @@ Criterio de Selección: El resultado debe mostrar únicamente el puesto que teng
 
 
 #Challenge 3
+#Se requiere realizar un análisis profundo de la masa salarial distribuida por divisiones corporativas. El reporte debe consolidar la información de los empleados cuyo salario se encuentre en el rango de 50,000 a 200,000 inclusive.
 
+Para cada división (identificada por el nombre de la compañía), el reporte debe mostrar:
+
+Métricas Financieras: El Salario Total (suma), Salario Promedio, Salario Mínimo y Salario Máximo.
+
+Volumen de Talento: La cantidad total de empleados por división.
+
+Categorización de División (Labeling): Clasificar cada división según su cantidad de empleados bajo los siguientes criterios:
+
+Pequeña: 10 empleados o menos.
+
+Mediana: Entre 11 y 20 empleados.
+
+Grande: Más de 20 empleados.
+
+Requerimientos de ordenamiento: Los resultados deben presentarse de mayor a menor según el Salario Total invertido en la división
+
+#Challenge 4
+#
