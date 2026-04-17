@@ -15,6 +15,8 @@ Una lista consolidada de los estados civiles (marital status) presentes en cada 
 
 El promedio de calificación de las empresas (company_rating) donde trabajan los empleados de cada país.
 
+<img width="951" height="38" alt="Screenshot 2026-04-17 at 10 31 56 AM" src="https://github.com/user-attachments/assets/0ab7e73a-ac17-45bb-b5e1-1bee52145be0" />
+
 
 #Challenge 2
 
@@ -31,6 +33,8 @@ La cantidad de empleados que ocupan dicho puesto.
 Una lista con los nombres completos (Nombre y Apellido) de todos los empleados en ese cargo, separados por coma.
 
 Criterio de Selección: El resultado debe mostrar únicamente el puesto que tenga el Salario Agregado más alto de toda la base de datos
+
+<img width="862" height="445" alt="Screenshot 2026-04-17 at 10 30 30 AM" src="https://github.com/user-attachments/assets/1c25c0cd-a324-41bc-b4d0-fd3803257d5a" />
 
 
 #Challenge 3
@@ -53,6 +57,9 @@ Grande: Más de 20 empleados.
 
 Requerimientos de ordenamiento: Los resultados deben presentarse de mayor a menor según el Salario Total invertido en la división
 
+<img width="1180" height="427" alt="Screenshot 2026-04-17 at 10 33 03 AM" src="https://github.com/user-attachments/assets/c20bfb39-1325-470d-bf70-9fdbfb27e59d" />
+
+
 #Challenge 4
 
 #Se solicita un informe integral para el departamento de Recursos Humanos que permita evaluar la composición demográfica de cada área y la efectividad de los procesos de selección. El reporte debe agruparse por ID de Departamento y calcular lo siguiente:
@@ -72,3 +79,6 @@ Una categoría para 'Otros géneros' que agrupe cualquier valor no mencionado an
 Indicador de Eficiencia de Reclutamiento:
 
 Contabilizar cuántos empleados fueron contratados en una fecha posterior a la fecha en que la vacante fue marcada como 'removida' (removed_date) en el sistema.
+
+
+<img width="1365" height="297" alt="Screenshot 2026-04-17 at 10 33 52 AM" src="https://github.com/user-attachments/assets/8b518106-8882-4ee2-b59a-4c024c8e119c" />
