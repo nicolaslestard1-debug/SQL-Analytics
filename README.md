@@ -1,5 +1,6 @@
 # SQL-Analytics
 #Consultas hechas durante mi formación en .Monks
+
 #Challenge 1 
 #Realizar una consulta que permita auditar la distribución geográfica de la fuerza laboral. Para ello, se requiere generar un reporte que agrupe la información por país y muestre los siguientes indicadores:
 
